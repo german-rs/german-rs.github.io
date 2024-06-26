@@ -1,0 +1,87 @@
+/* 
+
+    Autor: Germán A. Riveros Sepúlveda. 
+
+*/
+
+/* Configuraciones generales. */
+body *{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #eeeeee;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #000000;
+}
+/* Fin configuraciones generales. */
+
+
+/* Navegación */
+nav{
+    width: 100%;
+    text-align: center;
+} 
+
+nav a img{
+    width: 50px;
+    height: auto;
+    padding: 10px;
+}
+/* Fin navegación */
+
+/* Sección de héroe */
+header{
+    background-image: url("../img/me.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+
+    text-align: left;
+    padding: 100px;
+}
+
+header h1, h2{
+    background-color: transparent;
+}
+
+header h1{
+    font-size: 90px;
+    font-weight:900;
+}
+
+header h2{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #efab55;
+}
+/* Fin sección de héroe */
+
+
+/* Sección de contacto. */
+.sec_contacto{
+    text-align: center;
+    font-size: 1em;
+}
+
+.sec_contacto div{
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+    padding: 30px;
+    align-content: center;
+}
+
+.sec_contacto div i{
+    color: #efab55;
+}
+
+.sec_contacto div span{
+    font-weight: 200;
+}
+/* Fin sección de contacto. */
