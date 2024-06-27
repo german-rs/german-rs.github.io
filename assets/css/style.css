@@ -23,6 +23,11 @@ body{
 nav{
     width: 100%;
     text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 } 
 
 nav a img{
@@ -30,7 +35,75 @@ nav a img{
     height: auto;
     padding: 10px;
 }
+
+nav ul{
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ 
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    color: #efab55;
+}
+
+/* Botón sandwich. */
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon .bar{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Media Query para pantallas de móviles. */
+@media(max-width: 800px){
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    } 
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-icon{
+        display: block;
+        padding: 10px;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    nav ul.show{
+        display: flex;
+       
+    }
+  
+}
+/* Fin botón sandwich. */
+
 /* Fin navegación */
+
 
 /* Sección de héroe */
 header{
@@ -43,7 +116,7 @@ header{
 
     align-content: center;
     text-align: left;
-    padding: 100px;
+   
 }
 
 header h1, h2{
@@ -51,15 +124,17 @@ header h1, h2{
 }
 
 header h1{
-    font-size: 90px;
+    font-size: 70px;
     font-weight:900;
+    margin-left: 20px;
 }
 
 header h2{
     margin-top: 20px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     color: #efab55;
+    margin-left: 20px;
 }
 /* Fin sección de héroe */
 
