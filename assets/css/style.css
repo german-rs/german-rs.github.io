@@ -9,13 +9,10 @@ body *{
     border: 0;
     margin: 0;
     padding: 0;
-    color: #eeeeee;
+    color: #181923;
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    background-color: #000000;
-}
 /* Fin configuraciones generales. */
 
 
@@ -51,7 +48,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #D90429;
+    color: #EE6071;
 }
 
 /* Botón sandwich. */
@@ -63,7 +60,7 @@ nav ul li a:hover{
 .menu-icon .bar{
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #EE6071;
     margin: 5px 0;
     transition: 0.4s;
 }
@@ -107,7 +104,7 @@ nav ul li a:hover{
 
 /* Sección de héroe */
 header{
-    background-image: url("../img/back2.jpg");
+    background-image: url("../img/hero_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,14 +113,34 @@ header{
 
     align-content: center;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Efecto Glassmorfismo. */
+.glass-card {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
 
 header h1, h2{
     background-color: transparent;
 }
 
 header h1{
-    font-size: 70px;
+    font-size: 40px;
     font-weight:600;
     margin-left: 20px;
     color: #EDF2F4;
@@ -132,14 +149,14 @@ header h1{
 
 header h2{
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
-    color: #D90429;
+    color: #EE6071;
     margin-left: 20px;
 }
 
 header img{
-    width: 300px;
+    width: 30%;
     height: auto;
     border-radius: 100%;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -164,7 +181,7 @@ header img{
 }
 
 .sec_contacto div i{
-    color: #EF233C;
+    color: #EE6071;
     font-size: 20px;
 }
 
@@ -178,7 +195,8 @@ header img{
 /* Sección de acerca de. */
 .sec_acercade{
     text-align: center;
-    background-color: #8D99AE;
+
+    background: linear-gradient(135deg, #ebf4f5, #b5c6e0);
 }
 
 .sec_acercade h3{
@@ -203,6 +221,8 @@ header img{
 
 .sec_acercade div p{
     text-align: left;
+    font-size: 16pt;
+    font-weight: 200;
 }
 /* Fin sección de acerca de. */
 
