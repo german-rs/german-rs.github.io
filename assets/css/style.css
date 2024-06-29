@@ -51,7 +51,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #efab55;
+    color: #D90429;
 }
 
 /* Botón sandwich. */
@@ -107,16 +107,15 @@ nav ul li a:hover{
 
 /* Sección de héroe */
 header{
-    background-image: url("../img/me.webp");
+    background-image: url("../img/back2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 500px;
+    min-height: 700px;
 
     align-content: center;
-    text-align: left;
-   
+    text-align: center;
 }
 
 header h1, h2{
@@ -125,16 +124,26 @@ header h1, h2{
 
 header h1{
     font-size: 70px;
-    font-weight:900;
+    font-weight:600;
     margin-left: 20px;
+    color: #EDF2F4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header h2{
     margin-top: 20px;
     font-size: 30px;
     font-weight: 700;
-    color: #efab55;
+    color: #D90429;
     margin-left: 20px;
+}
+
+header img{
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    
 }
 /* Fin sección de héroe */
 
@@ -155,7 +164,7 @@ header h2{
 }
 
 .sec_contacto div i{
-    color: #efab55;
+    color: #EF233C;
     font-size: 20px;
 }
 
@@ -169,7 +178,7 @@ header h2{
 /* Sección de acerca de. */
 .sec_acercade{
     text-align: center;
-    background-color: #3d3f4c;
+    background-color: #8D99AE;
 }
 
 .sec_acercade h3{
