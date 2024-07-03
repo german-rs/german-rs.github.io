@@ -5,7 +5,12 @@
  */
 
 // Función botón sandwich.
-function toggleMenu(){
-    var menu = document.getElementById('menu');
-    menu.classList.toggle('show');
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
 }

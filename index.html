@@ -12,9 +12,9 @@
 	<!-- Etiquetas meta -->
 	<meta name="author" content="Germán Riveros S.">
 	<meta name="description"
-		content="Curriculum Vitae Germán A. Riveros Sepúlveda ingeniero en informática especializado en desarrollo web">
+		content="Sitio web Germán Riveros Sepúlveda ingeniero en informática especializado en desarrollo web front-end">
 	<meta name="keywords"
-		content="Curriculum, Resume, Formación académica, experiencia profesional, desarrollador web, ingeniero en informática, computación, Chile">
+		content="Germán Riveros Sepúlveda, Germán R. S, desarrollador web, ingeniero en informática, Front-end, Chile">
 
 	<!-- CSS local -->
 	<link rel="stylesheet" href="./assets/css/style.css">
@@ -26,124 +26,65 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
 
 	<!-- Fabicon -->
-	<link rel="shortcut icon" href="./assets/img/ico.png" type="image/x-icon">
+	<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
 	<title>Germán Riveros Sepúlveda | Desarrollador Web</title>
 </head>
 
 <body>
+
+
 	<!-- Sección de navegación.  -->
 	<nav>
-		<a href="#">
-			<img src="./assets/img/logo.png" alt="logo de marca">
-		</a>
+		<ul class="sidebar">
+			<li onclick="hideSidebar()">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+				</a>
+			</li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Skills</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
 
-		<!-- Botón Sandwich. -->
-		<div class="menu-icon" onclick="toggleMenu()">
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-		</div>
-
-		<ul class="menu" id="menu">
-			<li><a href="#">Acerca de</a></li>
-			<li><a href="#">Experiencia</a></li>
-			<li><a href="#">Educación</a></li>
-			<li><a href="#">Idiomas</a></li>
-			<li><a href="#">Aptitudes</a></li>
-			<li><a href="#">Software</a></li>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="./assets/img/logo.png" alt="logo de marca">
+				</a>
+			</li>
+			<li class="hideOnMobile"><a href="#">About</a></li>
+			<li class="hideOnMobile"><a href="#">Skills</a></li>
+			<li class="hideOnMobile"><a href="#">Contact</a></li>
+			<li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 		</ul>
 	</nav>
 	<!-- Fin sección de navegación.  -->
 
-	<!-- Sección de héroe. -->
-	<header>
-		<div class="glass-card">
-			<img src="./assets/img/me.jpg" alt="">
-			<h1>Germán Riveros Sepúlveda</h1>
-			<h2>CURRÍCULUM DIGITAL</h2>
-		</div>
 
+	<!-- Hero Section. -->
+	<header id="hero-section">
+		<div><p>HELLO_</p></div>
+		<div class="container_title">
+			<h1>WELCOME TO MY WEBSITE_</h1>
+		</div>
+		<div>
+			<i class="fa-solid fa-arrow-down fa-2x"></i>
+		</div>
 	</header>
-	<!-- Fin sección de héroe. -->
+	<!-- Hero Section. -->
 
-	<!-- Sección de contacto. -->
-	<section class="sec_contacto">
-		<div>
-			<i class="fa-solid fa-mobile-screen"></i>
-			<a href="tel:+56982960453">+569 82960453</a>
-		</div>
-		<div>
-			<i class="fa-solid fa-envelope"></i>
-			<a href="mailto:german.riveross@gmail.com">
-				german.riveross@gmail.com
-			</a>
-		</div>
-	</section>
-	<!-- Fin sección de contacto. -->
 
-	<!-- Sección acerca de. -->
-	<section class="sec_acercade">
-		<h3>ACERCA DE MÍ</h3>
-		<div>
-			<p>
-				Profesional de la computación con experiencia en docencia, atención al cliente e inclusión. Apasionado
-				por las tecnologías web, la programación y el deporte.
-			</p>
-		</div>
-		<div>
-			<img src="./assets/img/acerca.jpg" alt="">
-		</div>
-	</section>
-	<!-- Fin sección acerca de. -->
-
-	<!-- Sección de Experiencia. -->
-	<section class="sec_experiencia">
-		<h2>EXPERIENCIA PROFESIONAL</h2>
-
-		<!-- Experiencia 1. -->
-		<article>
-			<h3>Presencia digital</h3>
-			<h4>En EcoPérgolas</h4>
-			<p>
-				En este emprendimiento he realizado aspectos de la presencia digital como el sitio web, el branding, y
-				la estrategia digital a nivel inicial.
-			</p>
-			<p>Marzo 2024 al presente.</p>
-		</article>
-
-		<!-- Experiencia 2. -->
-		<article>
-			<h3>Consultoría TI</h3>
-			<h4>En Centro Budista Kadampa Tara</h4>
-			<p>
-				Como voluntariado para este centro gestioné y di solución a elementos con problemas en el diseño y el
-				funcionamiento de la web. Además, realicé exitosamente la migración de todo el sitio de un servidor a
-				otro y por último optimicé el sitio para buscadores.
-			</p>
-			<p>Septiembre 2023 - marzo 2024.</p>
-		</article>
-
-		<!-- Experiencia 3. -->
-		<article>
-			<h3>Gestión Web - Atención al cliente</h3>
-			<h4>En Centro Meditación Kadampa Chile</h4>
-			<p>
-				En este proyecto como voluntario tuve que gestionar el contenido de los sitios web: meditación en Chile,
-				meditación en zona sur, meditación en Antofagasta y festivales kadampa utilizando WordPress y
-				WooCommerce. Por otro lado, También trabajé atendiendo clientes en recepción, la tienda, la cafetería,
-				las redes sociales y vía telefónica. También, aprendí a utilizar Avada para el desarrollo front-end de
-				páginas web y realicé campañas de email marketing.
-			</p>
-			<p>Febrero 2023 - noviembre 2024.</p>
-		</article>
+	<!-- About section. -->
+	<section id="about">
 
 	</section>
-	<!-- Fin sección de Experiencia. -->
+
+
 
 	<script src="./assets/js/script.js"></script>
 </body>
