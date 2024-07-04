@@ -111,7 +111,6 @@ nav ul li:first-child{
     .menu-button{
         display: block;
     }
-    
 }
 
 @media (max-width: 400px) {
@@ -128,10 +127,10 @@ nav ul li:first-child{
 /* Hero section. */
 #hero-section{
     width: 100%;
-    min-height: 700px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     font-family: "Orbitron", sans-serif;
     background-color: var(--color-1);
@@ -145,18 +144,16 @@ nav ul li:first-child{
 
 .container_title{
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #hero-section h1{
     font-size: 3em;
     color: var(--dark-color);
     padding: 0 20px;
-}
-
-.centrar_contenido{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 #hero-section i{
@@ -168,7 +165,45 @@ nav ul li:first-child{
 /* About. */
 #about{
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
     background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+}
 
+#about article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#about h2{
+    font-family: "Orbitron", sans-serif;
+    padding: 10px;
+    margin-top: 4em;
+    color: var(--dark-color);
+}
+
+.linea-about{
+    width: 100px;
+    padding: 10px;
+}
+
+.contenedor-texto{
+    width: 500px;
+}
+
+#about p{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 1em;
+    color: var(--dark-color);
+}
+
+#about img{
+    margin-top: 4em;
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
 }
