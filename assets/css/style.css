@@ -4,6 +4,7 @@
 
 */
 
+
 /* Configuraciones generales. */
 *{
     margin: 0;
@@ -21,7 +22,6 @@ body{
     min-height: 100vh;
     font-family: "Poppins", "Orbitron", sans-serif;
 }
-
 /* Fin configuraciones generales. */
 
 
@@ -136,11 +136,43 @@ nav ul li:first-child{
     background-color: var(--color-1);
 }
 
-#hero-section p{
-    font-size: 2em;
+#hero-section span{
+    font-size: 2.5em;
     color: var(--dark-color);
     font-weight: 700;
 }
+
+/* Animación: HELLO_  */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadein-h{
+    animation: fadeIn 0.5s ease-in-out;
+}
+.fadein-e{
+    animation: fadeIn 1s ease-in-out;
+}
+.fadein-l{
+    animation: fadeIn 1.5s ease-in-out;
+}
+.fadein-l2{
+    animation: fadeIn 2s ease-in-out;
+}
+.fadein-o{
+    animation: fadeIn 2.5s ease-in-out;
+}
+.fadein-_{
+    animation: fadeIn 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+/* Fin animación: HELLO_  */
+
 
 .container_title{
     display: flex;
