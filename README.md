@@ -1,5 +1,5 @@
 # Germán Riveros Sepúlveda
-## Currículum Digital
+## Intento de portafolio Digital
 [GitHub Page](https://german-rs.github.io/)
 
-![Logo](./assets/img/logo.png)
+![Logo](./assets/img/favicon.png)
