@@ -28,7 +28,7 @@ body {
 
 /* Animación solo disponible para Google Chrome. */
 .scroll--watcher{
-    height: 10px;
+    height: 8px;
     position: fixed;
     top: 0;
     z-index: 1000;
