@@ -22,31 +22,7 @@ body {
     min-height: 100vh;
     font-family: "Poppins", "Orbitron", sans-serif;
 }
-
 /* Fin configuraciones generales. */
-
-
-/* Animación solo disponible para Google Chrome. */
-.scroll--watcher{
-    height: 8px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: rgb(192, 192, 192);
-    color: #000000;
-    width: 100%;
-    scale: 0;
-    animation: scroll-watcher linear;
-    animation-timeline: scroll();
-}
-
-@keyframes scroll-watcher{
-    to{ 
-        scale: 1 1; 
-        -moz-scale: 1 1;
-    }
-}
-
 
 
 
@@ -104,7 +80,6 @@ body {
 .underscore_ {
     animation: fadeIn 4s linear, fadeIn 1s ease-in infinite;
 }
-
 /* Fin animación: HELLO_  */
 
 
@@ -115,7 +90,6 @@ body {
     flex-wrap: wrap;
     padding: 0 30px;
 }
-
 
 #hero-section .welcome{
     font-size: 60pt;
@@ -140,11 +114,10 @@ body {
 .animation--slideup {
     animation: slideUp 2.5s ease-in-out;
 }
-
 /* Animation: Welcome. */
 
 
-/* Animation for to. */
+/* Animation for "to". */
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -160,8 +133,6 @@ body {
 .animation--slidedown {
     animation: slideDown 2.5s ease-in-out;
 }
-
-
 
 #hero-section i {
     color: var(--dark-color);
@@ -204,5 +175,4 @@ footer img{
     font-size: 1em;
     font-weight: 200;
 }
-
 /* End footer. */
