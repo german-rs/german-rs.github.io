@@ -44,7 +44,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     font-family: "Orbitron", sans-serif;
     background-color: var(--color-1);
@@ -98,7 +98,7 @@ body {
 }
 
 #hero-section .welcome{
-    font-size: 60pt;
+    font-size: 70pt;
     font-weight: 800;
     color: var(--dark-color);
     text-align: center;
@@ -227,6 +227,9 @@ footer img{
     
     #hero-section {
         justify-content: space-evenly;
+    }
+    #hero-section .welcome{
+        font-size: 50pt;
     }
 }
 
