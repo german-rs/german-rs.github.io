@@ -143,8 +143,68 @@ body {
 }
 /* End hero section. */
 
+#about{
+
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+.about__info{
+    
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+
+    width: 100%;
+    max-width: 900px;
+    height: auto;
 
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.about__text{
+    width: 100%;
+    max-width: 300px;
+}
+
+.about__text, p{
+    font-size: 18px;
+}
+
+.about__image {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    display: inline-block;
+}
+
+.about__image img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+}
 
 /* Footer. */
 footer{
@@ -176,6 +236,12 @@ footer img{
 .text-footer p{
     font-size: 1em;
     font-weight: 200;
+}
+
+.copyleft__image{
+    width: 1.5rem;
+    height: auto;
+    padding: 0;
 }
 /* End footer. */
 
