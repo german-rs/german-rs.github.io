@@ -22,6 +22,7 @@ body {
     min-height: 100vh;
     font-family: "Poppins", "Orbitron", sans-serif;
 }
+
 /* Fin configuraciones generales. */
 
 
@@ -33,7 +34,8 @@ body {
     border-bottom-right-radius: 15px;
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
+
 /* Navbar. */
 
 
@@ -86,6 +88,7 @@ body {
 .underscore_ {
     animation: fadeIn 4s linear, fadeIn 1s ease-in infinite;
 }
+
 /* Fin animación: HOLA_  */
 
 
@@ -97,7 +100,7 @@ body {
     padding: 0 30px;
 }
 
-#hero-section .welcome{
+#hero-section .welcome {
     font-size: 70pt;
     font-weight: 800;
     color: var(--dark-color);
@@ -136,42 +139,48 @@ body {
 .animation--slidedown {
     animation: slideDown 2.5s ease-in-out;
 }
+
 /* Fin animación H1. */
 
 #hero-section i {
     color: var(--dark-color);
 }
+
 /* End hero section. */
 
-#about{
-
+.main {
     background-image: url(../img/back.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+
+/* About section. */
+
+#about {
     height: 100vh;
 
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
-.about__info{
-    
+.about__info {
+
     background: rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 2rem;
 
-    width: 100%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 1000px;
     height: auto;
-
 
     display: flex;
     flex-direction: row;
@@ -180,34 +189,88 @@ body {
     flex-wrap: wrap;
     gap: 50px;
 }
-.about__text{
+
+.about__text {
     width: 100%;
     max-width: 300px;
+    padding: 1em 0;
 }
 
-.about__text, p{
+.about__header {
+    font-family: "Orbitron", sans-serif;
+    padding: 0.5em 0;
+}
+
+.about__text,
+p {
     font-size: 18px;
 }
 
-.about__image {
-    background: rgba(255, 255, 255, 0.15);
+.about__image img {
+    width: 100%;
+    max-width: 350px;
     border-radius: 50%;
+}
+
+/* End about section. */
+
+
+#skills {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__text{
+    padding: 1em 0;
+}
+.skills__header {
+    font-family: "Orbitron", sans-serif;
+    padding: 0.5em 0;
+}
+
+.skills__text p {
+    font-size: 18px;
+}
+
+.skills__techs {
+    width: 90%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 1rem;
-    display: inline-block;
+    padding: 2rem;
+    height: 500px;
+
+    position: relative;
 }
 
-.about__image img{
-    width: 100%;
-    max-width: 300px;
-    border-radius: 50%;
+.moving-div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /* Footer. */
-footer{
+footer {
     background-color: #212121;
     color: #FAFAFA;
     display: flex;
@@ -218,31 +281,32 @@ footer{
     height: auto;
 }
 
-footer img{
+footer img {
     width: 150px;
     height: auto;
     padding: 2em;
 }
 
-.icons-social i{
+.icons-social i {
     color: #FAFAFA;
     padding: 1em;
 }
 
-.text-footer{
+.text-footer {
     padding: 3em;
 }
 
-.text-footer p{
+.text-footer p {
     font-size: 1em;
     font-weight: 200;
 }
 
-.copyleft__image{
+.copyleft__image {
     width: 1.5rem;
     height: auto;
     padding: 0;
 }
+
 /* End footer. */
 
 
@@ -265,7 +329,7 @@ footer img{
         justify-content: space-evenly;
     }
 
-    #hero-section .welcome{
+    #hero-section .welcome {
         font-size: 50pt;
     }
 }
@@ -280,7 +344,7 @@ footer img{
         justify-content: space-evenly;
     }
 
-    #hero-section .welcome{
+    #hero-section .welcome {
         font-size: 50pt;
     }
 }
@@ -290,11 +354,12 @@ footer img{
     .contenedor {
         min-width: 768px;
     }
-    
+
     #hero-section {
         justify-content: space-evenly;
     }
-    #hero-section .welcome{
+
+    #hero-section .welcome {
         font-size: 50pt;
     }
 }
