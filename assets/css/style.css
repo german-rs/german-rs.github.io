@@ -156,12 +156,17 @@ body {
     background-attachment: fixed;
 }
 
+.main__header{
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0.3em 0;
+}
 
 /* About section. */
 
 #about {
     height: 100vh;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,14 +196,10 @@ body {
 }
 
 .about__text {
+    display: inline;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     padding: 1em 0;
-}
-
-.about__header {
-    font-family: "Orbitron", sans-serif;
-    padding: 0.5em 0;
 }
 
 .about__text,
