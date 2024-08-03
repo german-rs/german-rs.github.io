@@ -1,0 +1,75 @@
+
+/* Contenedor principal. */
+.contenedor {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .contenedor {
+        min-width: 475px;
+    }
+
+    #hero-section {
+        justify-content: space-evenly;
+    }
+
+    #hero-section .welcome {
+        font-size: 50pt;
+    }
+}
+
+/* sm. */
+@media (max-width: 640px) {
+    .contenedor {
+        min-width: 640px;
+    }
+
+    #hero-section {
+        justify-content: space-evenly;
+    }
+
+    #hero-section .welcome {
+        font-size: 50pt;
+    }
+}
+
+/* md. */
+@media (max-width: 768px) {
+    .contenedor {
+        min-width: 768px;
+    }
+
+    #hero-section {
+        justify-content: space-evenly;
+    }
+
+    #hero-section .welcome {
+        font-size: 50pt;
+    }
+}
+
+/* lg. */
+@media (max-width: 1024px) {
+    .contenedor {
+        min-width: 1024px;
+    }
+}
+
+/* xl. */
+@media (max-width: 1280px) {
+    .contenedor {
+        min-width: 1280px;
+    }
+}
+
+/* 2xl. */
+@media (max-width: 1536px) {
+    .contenedor {
+        min-width: 1536px;
+    }
+}

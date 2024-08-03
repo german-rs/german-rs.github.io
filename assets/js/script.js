@@ -1,8 +1,10 @@
 /**
  *  
- * Autor: Germán A. Riveros Sepúlveda. 
+ * Autor: Germán Riveros Sepúlveda. 
  * 
  */
+import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+
 
 const container = document.querySelector('.skills__techs');
 const movingDivs = document.querySelectorAll('.moving-div');

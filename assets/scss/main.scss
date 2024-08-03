@@ -1,0 +1,17 @@
+@import "abstracts/variables";
+
+@import "vendors/bootstrap";
+
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/main";
+@import "layout/about";
+@import "layout/skills";
+@import "layout/works";
+@import "layout/contact";
+@import "layout/footer";
+
+@import "components/navbar";
