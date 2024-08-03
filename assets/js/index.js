@@ -1,4 +1,7 @@
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+/*
+	Author: Germán Riveros Sepúlveda.
+	Portafolio digital.
+*/
 
 const container = document.querySelector('.skills__techs');
 const movingDivs = document.querySelectorAll('.moving-div');
