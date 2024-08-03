@@ -1,0 +1,28 @@
+{
+  "name": "german-rs.github.io",
+  "version": "1.0.0",
+  "description": "Portafolio digital de desarrollador front-end, mostrando proyectos y habilidades en HTML, CSS, JavaScript, Sass y Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portafolio",
+    "desarrollador frontend",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Vue",
+    "SCSS",
+    "responsive design",
+    "web development",
+    "Sass",
+    "proyectos",
+    "portfolio"
+  ],
+  "author": "Germán Riveros",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
