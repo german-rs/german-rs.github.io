@@ -4,7 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11973,73 +11973,54 @@ textarea.form-control-lg {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #212121;
+  font-family: "Nunito", sans-serif;
+  color: #FAFAFA;
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.hero-section {
+.header {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-family: "Orbitron", sans-serif;
-  background-color: #FAFAFA;
+  background: rgba(0, 0, 0, 0.85);
 }
-
-.hero-section .greeting {
-  font-size: 2.5em;
-  color: #212121;
-  font-weight: 700;
-}
-
-/* Animación para HOLA_  */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.fadein-h {
-  animation: fadeIn 1s ease-in;
-}
-
-.fadein-o {
-  animation: fadeIn 1.5s ease-in;
-}
-
-.fadein-l {
-  animation: fadeIn 2s ease-in;
-}
-
-.fadein-a {
-  animation: fadeIn 2.5s ease-in;
-}
-
-.underscore_ {
-  animation: fadeIn 4s linear, fadeIn 1s ease-in infinite;
-}
-
-/* Fin animación: HOLA_  */
-.container_title {
+.header__title-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #FAFAFA;
   flex-wrap: wrap;
   padding: 0 30px;
 }
-
-.hero-section .welcome {
+.header__welcome {
   font-size: 70pt;
-  font-weight: 800;
-  color: #212121;
+  font-weight: 900;
   text-align: center;
 }
+.header__welcome--slideup {
+  animation: slideUp 2.5s ease-in-out;
+}
+.header__welcome--slidedown {
+  animation: slideDown 2.5s ease-in-out;
+}
+.header__welcome--animated-text::after {
+  content: "A";
+  animation: changeText 4s ease-in-out infinite;
+  opacity: 1;
+  transition: opacity 4s ease-in-out;
+}
+.header__welcome--fadein {
+  animation: fadeIn 4s linear, fadeIn 1s ease-in infinite;
+}
 
-/* Animación H1 */
 @keyframes slideUp {
   from {
     transform: translateY(100%);
@@ -12050,10 +12031,6 @@ body {
     opacity: 1;
   }
 }
-.animation--slideup {
-  animation: slideUp 2.5s ease-in-out;
-}
-
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -12064,51 +12041,56 @@ body {
     opacity: 1;
   }
 }
-.animation--slidedown {
-  animation: slideDown 2.5s ease-in-out;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-/* Fin animación H1. */
-.hero-section i {
-  color: #212121;
+@keyframes changeText {
+  0%, 100% {
+    content: "A";
+    opacity: 1;
+  }
+  25%, 50%, 75% {
+    opacity: 0;
+  }
+  50% {
+    content: "O";
+    opacity: 1;
+  }
 }
-
-/* End hero section. */
+@media screen and (max-width: 800px) {
+  .header__welcome {
+    font-size: 55pt;
+    font-weight: 800;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__welcome {
+    font-size: 40pt;
+    font-weight: 800;
+  }
+}
 .main {
-  background-image: url(../img/back.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: rgba(0, 0, 0, 0.55);
 }
 
-.main__header {
-  font-size: 20px;
-  font-weight: 500;
-  display: inline;
-}
-
-.main__header--h2 {
-  font-size: 18px;
-  font-weight: 500;
-  display: inline;
-}
-
-/* About section. */
 .about {
   height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .about__header {
   font-family: "Orbitron", sans-serif;
   padding: 0.5em 0;
 }
-
-.about__info {
+.about__content {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -12126,54 +12108,56 @@ body {
   flex-wrap: wrap;
   gap: 50px;
 }
-
 .about__text {
   display: inline;
   width: 100%;
   max-width: 400px;
   padding: 1em 0;
 }
-
 .about__text p {
-  font-size: 18px;
+  font-size: 20px;
   display: inline;
 }
-
-.about__image img {
+.about__name {
+  font-size: 22px;
+  font-weight: 500;
+  display: inline;
+}
+.about__specialization {
+  font-size: 22px;
+  font-weight: 500;
+  display: inline;
+}
+.about__image-img {
   width: 100%;
   max-width: 350px;
   border-radius: 50%;
 }
 
-/* End about section. */
 .skills {
   padding: 2rem;
   color: white;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.65);
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .skills__text {
   padding: 1em 0;
 }
-
 .skills__header {
   font-family: "Orbitron", sans-serif;
   padding: 0.5em 0;
 }
-
-.skills__text p {
+.skills__description {
   font-size: 18px;
 }
-
-.skills__techs {
+.skills__technologies {
   width: 90%;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(202, 201, 201, 0.15);
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
@@ -12183,8 +12167,7 @@ body {
   height: 500px;
   position: relative;
 }
-
-.moving-div {
+.skills__technology {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -12198,11 +12181,32 @@ body {
   align-items: center;
   justify-content: center;
 }
+.skills__technology--css {
+  color: #299ed5;
+}
+.skills__technology--js {
+  color: #F7E018;
+}
+.skills__technology--bootstrap {
+  color: #563D7C;
+}
+.skills__technology--github {
+  color: #000000;
+}
+.skills__technology--html {
+  color: #E93E30;
+}
+.skills__technology--sass {
+  color: #cc6699;
+}
+.skills__technology--git {
+  color: #F05033;
+}
 
 /* Works. */
 .works {
   color: white;
-  background: rgba(0, 0, 0, 0.394);
+  background: rgba(0, 0, 0, 0.75);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -12262,10 +12266,9 @@ body {
 }
 
 /* Works. */
-/* Contact. */
 .contact {
   color: white;
-  background: rgba(8, 8, 8, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -12274,17 +12277,14 @@ body {
   align-items: center;
   text-align: center;
 }
-
 .contact__header {
   font-family: "Orbitron", sans-serif;
   padding: 0.5em 0;
 }
-
 .contact__email {
   color: #FAFAFA;
 }
-
-.pulsing-shadow {
+.contact__email--animation {
   color: #fff;
   animation: pulse-shadow 2s infinite;
 }
@@ -12300,10 +12300,8 @@ body {
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
   }
 }
-/* End Contact. */
-/* Footer. */
 .footer {
-  background-color: #212121;
+  background: rgba(0, 0, 0, 0.9);
   color: #FAFAFA;
   display: flex;
   flex-direction: column;
@@ -12312,34 +12310,28 @@ body {
   width: 100%;
   height: auto;
 }
-
-.footer img {
+.footer__logo-img {
   width: 150px;
   height: auto;
   padding: 2em;
 }
-
-.icons-social i {
+.footer__social-link i {
   color: #FAFAFA;
   padding: 1em;
 }
-
-.text-footer {
+.footer__text {
   padding: 3em;
 }
-
-.text-footer p {
+.footer__text-paragraph {
   font-size: 1em;
   font-weight: 200;
 }
 
-.copyleft__image {
-  width: 18px;
-  height: auto;
-  padding: 0;
+.nav-link {
+  color: #FAFAFA;
+  font-size: 18px;
 }
 
-/* End footer. */
 .glassmorphism-navbar {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);

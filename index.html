@@ -1,6 +1,6 @@
 <!--
 	Author: Germán Riveros Sepúlveda.
-	Portafolio digital.
+	Portafolio digital
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,22 +16,22 @@
 	<!-- Etiquetas meta -->
 	<meta name="author" content="Germán Riveros">
 	<meta name="description"
-		content="Germán Riveros Sepúlveda, ingeniero en informática especializado en desarrollo web front-end. Explora mi portafolio digital.">
+		content="Germán Riveros, ingeniero en informática especializado en desarrollo web front-end. Explora mi portafolio digital.">
 	<meta name="keywords"
-		content="Germán Riveros, Germán R. S., german-rs, german_rs, desarrollador web, ingeniero en informática, Front-end, Chile, HTML, CSS, Javascript">
+		content="Germán Riveros, Germán Riveros Sepúlveda, german-rs, german_rs, desarrollador web, ingeniero en informática, Front-end, Chile, HTML, CSS, Javascript">
 
 	<!-- FontAwesome -->
 	<script src="https://kit.fontawesome.com/899edd289a.js" crossorigin="anonymous"></script>
 
 	<!-- CSS local -->
 	<link rel="stylesheet" href="./assets/css/main.css">
-	<title>Germán Riveros S. | Ingeniero en informática</title>
+	<title>Germán Riveros | Ingeniero en informática</title>
 </head>
 
 <body>
 	<!-- Navbar. -->
-	<nav class="navbar navbar-expand-lg fixed-top glassmorphism-navbar">
-		<div class="container-fluid">
+	<nav class="navbar navbar-expand-lg fixed-top glassmorphism-navbar" data-bs-theme="dark">
+		<div class="container-fluid container">
 			<a class="navbar-brand" href="#">
 				<img src="./assets/img/favicon.png" alt="Logo Germán Riveros">
 			</a>
@@ -43,7 +43,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-5 ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+						<a class="nav-link" aria-current="page" href="#">Inicio</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#about">Acerca</a>
@@ -64,144 +64,129 @@
 	</nav>
 	<!-- End navbar. -->
 
-
 	<!-- Hero Section. -->
-	<header class="hero-section">
-		<div>
-			<span class="greeting fadein-h">H</span>
-			<span class="greeting fadein-o">O</span>
-			<span class="greeting fadein-l">L</span>
-			<span class="greeting fadein-a">A</span>
-			<span class="greeting underscore_">_</span>
-		</div>
-		<div class="container_title">
-			<span class="welcome animation--slideup">BIEN</span>
-			<span class="welcome animation--slideup">VENID@</span>
-			<span class="welcome animation--slidedown">&nbsp;A</span>
-			<span class="welcome animation--slideup">&nbsp;MI</span>
-			<span class="welcome animation--slidedown">&nbsp;SITIO</span>
-			<span class="welcome animation--slideup">&nbsp;WEB</span>
-			<span class="welcome underscore_">|</span>
-		</div>
-		<div>
-			<i class="fa-solid fa-arrow-down fa-2x"></i>
+	<header class="header">
+		<div class="header__title-container container">
+			<span class="header__welcome header__welcome--slideup">BIEN</span>
+			<span class="header__welcome header__welcome--slideup">VENID</span>
+			<span class="header__welcome header__welcome--slideup header__welcome--animated-text"></span>
+			<span class="header__welcome header__welcome--slidedown">&nbsp;A</span>
+			<span class="header__welcome header__welcome--slideup">&nbsp;MI</span>
+			<span class="header__welcome header__welcome--slidedown">&nbsp;PORTAFOLIO</span>
+			<span class="header__welcome header__welcome--slideup">&nbsp;DIGITAL</span>
+			<span class="header__welcome header__welcome--slidedown header__welcome--fadein">_</span>
 		</div>
 	</header>
 	<!-- Hero Section. -->
 
 
 	<main class="main">
-
-		<!-- Section About. -->
-		<section class="about" id="about">
+		<section class="about container" id="about">
 			<h3 class="about__header">ACERCA DE</h3>
-			<article class="about__info">
+			<article class="about__content">
 				<div class="about__text">
-					<p>Hola &#9996;&#65039; soy </p>
-					<h1 class="main__header">Germán Riveros</h1>
+					<p>Hola &#9996;&#65039; soy</p>
+					<h1 class="about__name">Germán Riveros</h1>
 					<p> ingeniero en informática y actualmente me estoy
 						especializando en
-					<h2 class="main__header--h2">desarrollo web front-end</h2>.
+					<h2 class="about__specialization">desarrollo web front-end</h2>.
 					</p>
 				</div>
-
 				<div class="about__image">
-					<img src="./assets/img/me.jpeg" alt="Germán Riveros Sepúlveda">
+					<img src="./assets/img/me.jpeg" alt="Germán Riveros Sepúlveda" class="about__image-img">
 				</div>
-
 			</article>
-
 		</section>
-		<!-- End section About. -->
-
-
-		<!-- Section Skills. -->
-		<section class="skills" id="skills">
-			<div class="skills__text">
-				<h3 class="skills__header">HABILIDADES</h3>
-				<p>Estas son las tecnologías y lenguajes en los que estoy profundizando.</p>
-			</div>
-			<div class="skills__techs">
-				<div class="moving-div">
-					<i class="fa-brands fa-css3-alt fa-3x"></i>
-				</div>
-				<div class="moving-div">
-					<i class="fa-brands fa-js fa-3x"></i>
-				</div>
-				<div class="moving-div">
-					<i class="fa-brands fa-bootstrap fa-3x"></i>
-				</div>
-				<div class="moving-div">
-					<i class="fa-brands fa-github fa-3x"></i>
-				</div>
-				<div class="moving-div">
-					<i class="fa-brands fa-html5 fa-3x"></i>
-				</div>
-				<div class="moving-div">
-					<i class="fa-brands fa-sass fa-3x"></i>
-				</div>
-			</div>
-		</section>
-		<!-- End section Skills. -->
-
-
-		<!-- Section Works. -->
-		<section class="works" id="works">
-			<div class="works__text mb-5">
-				<h3 class="works__header">TRABAJOS</h3>
-				<p>Estos son algunos de los trabajos que he realizado para el bootcamp.</p>
-			</div>
-			<section class="works__cards">
-				<div class="card card-glass" style="width: 18rem;">
-					<img src="./assets/img/works/blogfrontend.webp" class="card-img-top rounded-top-img" alt="...">
-					<div class="card-body">
-						<h5 class="card-title text-light">Blog FrontEnd</h5>
-						<p class="card-text text-light">El objetivo de este desafío fue implementar la metodología BEM
-							(Block, Element, Modifier) para
-							la estructuración del CSS, junto con el uso de Sass siguiendo el patrón de arquitectura 7-1.
-						</p>
-						<div class="mt-2">
-							<a href="https://germanriveros.cl/BlogFrontEnd-Sass/" target="_blank"
-								class="btn btn-glass text-light">Ver sitio</a>
-							<a href="https://github.com/german-rs/BlogFrontEnd-Sass" target="_blank"
-								class="btn btn-glass text-light">Ver código</a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</section>
-		<!-- End section Works. -->
-
-		<!-- Section contact. -->
-		<section class="contact" id="contact">
-			<h3 class="contact__header">CONTACTO</h3>
-			<div class="p-5">
-				<a class="contact__email" href="mailto:german.riveross@gmail.com">
-					<i class="fa-regular fa-envelope fa-3x pulsing-shadow"></i>
-				</a>
-			</div>
-		</section>
-		<!-- End section contact. -->
 	</main>
 
+	<!-- Section Skills. -->
+	<section class="skills" id="skills">
+		<div class="skills__text">
+			<h3 class="skills__header">HABILIDADES</h3>
+			<p class="skills__description">Estas son las tecnologías y lenguajes en los que estoy profundizando.</p>
+		</div>
+		<div class="skills__technologies">
+			<div class="skills__technology skills__technology--css">
+				<i class="fa-brands fa-css3-alt fa-3x"></i>
+			</div>
+			<div class="skills__technology skills__technology--js">
+				<i class="fa-brands fa-js fa-3x"></i>
+			</div>
+			<div class="skills__technology skills__technology--bootstrap">
+				<i class="fa-brands fa-bootstrap fa-3x"></i>
+			</div>
+			<div class="skills__technology skills__technology--github">
+				<i class="fa-brands fa-github fa-3x"></i>
+			</div>
+			<div class="skills__technology skills__technology--html">
+				<i class="fa-brands fa-html5 fa-3x"></i>
+			</div>
+			<div class="skills__technology skills__technology--sass">
+				<i class="fa-brands fa-sass fa-3x"></i>
+			</div>
+			<div class="skills__technology skills__technology--git">
+				<i class="fa-brands fa-git-alt fa-3x"></i>
+			</div>
+		</div>
+	</section>
+	<!-- End section Skills. -->
+
+	<!-- Section Works. -->
+	<section class="works" id="works">
+		<div class="works__text mb-5">
+			<h3 class="works__header">TRABAJOS</h3>
+			<p>Estos son algunos de los trabajos que he realizado para el bootcamp.</p>
+		</div>
+		<section class="works__cards">
+			<div class="card card-glass" style="width: 18rem;">
+				<img src="./assets/img/works/blogfrontend.webp" class="card-img-top rounded-top-img" alt="...">
+				<div class="card-body">
+					<h5 class="card-title text-light">Blog FrontEnd</h5>
+					<p class="card-text text-light">El objetivo de este desafío fue implementar la metodología BEM
+						(Block, Element, Modifier) para
+						la estructuración del CSS, junto con el uso de Sass siguiendo el patrón de arquitectura 7-1.
+					</p>
+					<div class="mt-2">
+						<a href="https://germanriveros.cl/BlogFrontEnd-Sass/" target="_blank"
+							class="btn btn-glass text-light">Ver sitio</a>
+						<a href="https://github.com/german-rs/BlogFrontEnd-Sass" target="_blank"
+							class="btn btn-glass text-light">Ver código</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- End section Works. -->
+
+	<!-- Section contact. -->
+	<section class="contact" id="contact">
+		<h3 class="contact__header">CONTACTO</h3>
+		<div class="contact__content p-5">
+			<a class="contact__email" href="mailto:german.riveross@gmail.com">
+				<i class="fa-regular fa-envelope fa-3x contact__email--animation"></i>
+			</a>
+		</div>
+	</section>
+	<!-- End section contact. -->
 
 	<!-- Footer. -->
 	<footer class="footer">
-		<div class="img-footer">
-			<img src="./assets/img/logo.png" alt="Logo Germán Riveros">
+		<div class="footer__logo">
+			<img src="./assets/img/logo.png" alt="Logo Germán Riveros" class=" footer__logo-img">
 		</div>
-		<div class="icons-social">
-			<a href="https://www.instagram.com/_german_rs_/" target="_blank"><i
+		<div class="footer__social-icons">
+			<a href="https://www.instagram.com/_german_rs_/" target="_blank" class="footer__social-link"><i
 					class="fa-brands fa-instagram fa-2x"></i></a>
-			<a href="https://www.linkedin.com/in/german-rs/" target="_blank"><i
+			<a href="https://www.linkedin.com/in/german-rs/" target="_blank" class="footer__social-link"><i
 					class="fa-brands fa-linkedin fa-2x"></i></a>
-			<a href="https://github.com/german-rs" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+			<a href="https://github.com/german-rs" target="_blank" class="footer__social-link"><i
+					class="fa-brands fa-github fa-2x"></i></a>
 		</div>
-		<div class="text-footer">
-			<p>
+		<div class="footer__text">
+			<p class="footer__text-paragraph">
 				This site has been created by Germán Riveros S.
 			</p>
-			<p>Licensed under a Copyleft license. © 2024.</p>
+			<p class="footer__text-paragraph">Licensed under a Copyleft license. © 2024.</p>
 		</div>
 	</footer>
 	<!-- Footer. -->

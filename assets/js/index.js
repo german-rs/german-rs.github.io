@@ -3,8 +3,8 @@
 	Portafolio digital.
 */
 
-const container = document.querySelector('.skills__techs');
-const movingDivs = document.querySelectorAll('.moving-div');
+const container = document.querySelector('.skills__technologies');
+const movingDivs = document.querySelectorAll('.skills__technology');
 
 function initializeDivs() {
     movingDivs.forEach(div => {

@@ -1,56 +1,64 @@
-/* About section. */
-
 .about {
     height: 100vh;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__header {
+        font-family: $font-primary-header;
+        padding: 0.5em 0;
+    }
+
+    &__content {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 2rem;
+
+        width: 90%;
+        max-width: 1000px;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    &__text {
+        display: inline;
+        width: 100%;
+        max-width: 400px;
+        padding: 1em 0;
+
+        p {
+            font-size: 20px;
+            display: inline;
+        }
+    }
+
+    &__name {
+        font-size: 22px;
+        font-weight: 500;
+        display: inline;
+    }
+
+    &__specialization {
+        font-size: 22px;
+        font-weight: 500;
+        display: inline;
+    }
+
+    &__image-img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 50%;
+    }
 }
-
-.about__header {
-    font-family: $font-primary-header;
-    padding: 0.5em 0;
-}
-
-
-.about__info {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 2rem;
-
-    width: 90%;
-    max-width: 1000px;
-    height: auto;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-
-.about__text {
-    display: inline;
-    width: 100%;
-    max-width: 400px;
-    padding: 1em 0;
-}
-
-.about__text p {
-    font-size: 18px;
-    display: inline;
-}
-
-.about__image img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 50%;
-}
-
-/* End about section. */
