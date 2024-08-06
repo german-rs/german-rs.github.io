@@ -2,52 +2,80 @@
     padding: 2rem;
     color: white;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.65);
     height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.skills__text {
-    padding: 1em 0;
-}
+    &__text {
+        padding: 1em 0;
+    }
 
-.skills__header {
-    font-family: $font-primary-header;
-    padding: 0.5em 0;
-}
+    &__header {
+        font-family: $font-primary-header;
+        padding: 0.5em 0;
+    }
 
-.skills__text p {
-    font-size: 18px;
-}
+    &__description {
+        font-size: 18px;
+    }
 
-.skills__techs {
-    width: 90%;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 2rem;
-    height: 500px;
+    &__technologies {
+        width: 90%;
+        background: rgba(202, 201, 201, 0.15);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 2rem;
+        height: 500px;
+    
+        position: relative;
+    }
 
-    position: relative;
-}
+    &__technology {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-.moving-div {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        &--css{
+            color: $color-css;
+        }
+        &--js{
+            color: $color-js;
+        }
+
+        &--bootstrap{
+            color: $color-bootstrap;   
+        }
+
+        &--github{
+            color:$color-github;
+        }
+
+        &--html{
+            color: $color-HTML;
+        }
+        
+        &--sass{
+            color:$color-sass;
+        }
+        
+        &--git{
+            color:$color-git;
+        }
+
+    }
 }

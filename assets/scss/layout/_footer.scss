@@ -1,6 +1,5 @@
-/* Footer. */
 .footer {
-    background-color: #212121;
+    background: rgba(0, 0, 0, 0.9);
     color: #FAFAFA;
     display: flex;
     flex-direction: column;
@@ -8,32 +7,24 @@
     text-align: center;
     width: 100%;
     height: auto;
-}
 
-.footer img {
-    width: 150px;
-    height: auto;
-    padding: 2em;
-}
+    &__logo-img{
+        width: 150px;
+        height: auto;
+        padding: 2em;
+    }
 
-.icons-social i {
-    color: #FAFAFA;
-    padding: 1em;
-}
+    &__social-link i{
+        color: #FAFAFA;
+        padding: 1em;
+    }
 
-.text-footer {
-    padding: 3em;
-}
+    &__text {
+        padding: 3em;
 
-.text-footer p {
-    font-size: 1em;
-    font-weight: 200;
+        &-paragraph{
+            font-size: 1em;
+            font-weight: 200;
+        }
+    }
 }
-
-.copyleft__image {
-    width: 18px;
-    height: auto;
-    padding: 0;
-}
-
-/* End footer. */
