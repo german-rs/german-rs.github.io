@@ -23,6 +23,11 @@
         font-size: 18px;
     }
 
+    &__list-item{
+        display: inline;
+        padding: 0 0.5em;
+    }
+
     &__technologies {
         width: 90%;
         background: rgba(202, 201, 201, 0.15);
@@ -75,6 +80,10 @@
         
         &--git{
             color:$color-git;
+        }
+
+        &--node{
+            color:$color-node;
         }
 
     }
