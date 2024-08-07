@@ -11975,6 +11975,7 @@ textarea.form-control-lg {
 body {
   font-family: "Nunito", sans-serif;
   color: #FAFAFA;
+  scrollbar-color: #E93E30 #67C770;
   background-image: url(../img/back.jpg);
   background-size: cover;
   background-position: center;
@@ -12155,6 +12156,10 @@ body {
 .skills__description {
   font-size: 18px;
 }
+.skills__list-item {
+  display: inline;
+  padding: 0 0.5em;
+}
 .skills__technologies {
   width: 90%;
   background: rgba(202, 201, 201, 0.15);
@@ -12201,6 +12206,9 @@ body {
 }
 .skills__technology--git {
   color: #F05033;
+}
+.skills__technology--node {
+  color: #5fa04e;
 }
 
 /* Works. */
