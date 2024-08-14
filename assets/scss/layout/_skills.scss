@@ -2,50 +2,45 @@
     padding: 2rem;
     color: white;
     text-align: center;
-    background: rgba(0, 0, 0, 0.65);
     height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__text {
-        padding: 1em 0;
+    &__content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    &__header {
-        font-family: $font-primary-header;
-        padding: 0.5em 0;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        gap: 1em;
+    }
+
+    &__title {
+        text-align: start;
     }
 
     &__description {
-        font-size: 18px;
-    }
-
-    &__list-item{
-        display: inline;
-        padding: 0 0.5em;
+        text-align: start;
+        font-size: 16px;
     }
 
     &__technologies {
-        width: 90%;
-        background: rgba(202, 201, 201, 0.15);
-        border-radius: 20px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        padding: 2rem;
+        background-image: linear-gradient(to right, #210CAE, #4dc9e6);
+        width: 100%;
+        max-width: 500px;
         height: 500px;
-    
+        border-radius: 20px;
+        padding: 2rem;
         position: relative;
     }
 
     &__technology {
         position: absolute;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 10px;
         backdrop-filter: blur(10px);
@@ -85,6 +80,26 @@
         &--node{
             color:$color-node;
         }
+    }
+}
 
+@media screen and (max-width:800px) {
+    .skills__title{
+        margin-top: 3em;
+    }
+
+    .skills{
+        margin-bottom: 4em;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .skills__title{
+        margin-top: 3em;
+    }
+
+    .skills{
+        margin-bottom: 4em;
     }
 }

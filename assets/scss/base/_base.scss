@@ -1,10 +1,5 @@
 body {
     font-family: $font-primary-text;
     color: $color-1;
-    scrollbar-color: $color-HTML $color-vue;
-    background-image: url(../img/back.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: $color-background;
 }

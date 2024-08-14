@@ -1,13 +1,21 @@
+.navbar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .nav-link {
     color: $color-1;
     font-size: 18px;
 }
 
-.glassmorphism-navbar {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.nav-link:hover{
+    color: $accent-color;
+}
+
+.navbar-brand__image{
+    width: 100%;
+    max-width: 90px;
+    height: auto;
 }
