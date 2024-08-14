@@ -1,114 +1,44 @@
-.header {
+.header{
     width: 100%;
     height: 100vh;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-family: $font-primary-header;
-    background: rgba(0, 0, 0, 0.85);
 
-    &__title-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $color-1;
-        flex-wrap: wrap;
-        padding: 0 30px;
+    &__text{
+        font-size: 48px;
+        color: $gray;
     }
 
-    &__welcome {
-        font-size: 70pt;
+    &__title{
+        font-family: $font-primary-header;
+        font-size: 120px;
         font-weight:900;
-        text-align: center;
-
-        &--slideup {
-            animation: slideUp 2.5s ease-in-out;
-        }
-
-        &--slidedown {
-            animation: slideDown 2.5s ease-in-out;
-        }
-
-        &--animated-text::after {
-            content: 'A';
-            animation: changeText 4s ease-in-out infinite;
-            opacity: 1;
-            transition: opacity 4s ease-in-out;
-        }
-
-        &--fadein {
-            animation: fadeIn 4s linear, fadeIn 1s ease-in infinite;
-        }
-
-    }
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
     }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+    &__title-line{
+        display: block;
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
     }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes changeText {
-
-    0%,
-    100% {
-        content: 'A';
-        opacity: 1;
-    }
-
-    25%,
-    50%,
-    75% {
-        opacity: 0;
-    }
-
-    50% {
-        content: 'O';
-        opacity: 1;
+    &__title-dot{
+        color: $accent-color;
+        vertical-align: sub; 
     }
 }
 
 @media screen and (max-width:800px) {
-    .header__welcome {
-        font-size: 55pt;
-        font-weight: 800;
+    .header__title{
+        font-size: 100px;
+        font-weight:900;
     }
 }
 
 
 @media screen and (max-width:600px) {
-    .header__welcome {
-        font-size: 40pt;
-        font-weight: 800;
+    .header__title{
+        font-size: 80px;
+        font-weight:900;
     }
 }

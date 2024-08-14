@@ -1,0 +1,35 @@
+.button__custom {
+  background: linear-gradient(to right, #4dc9e6, #210CAE);
+  border-radius: 15px;
+  width: 150px;
+  border: none;
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(to left, #4dc9e6, #210CAE);
+  }
+
+  &--header{
+    padding: 0.5em;
+    color: $color-1;
+    width: 200px;
+  }
+}
+
+.btn-outline-gradient {
+  width: 200px;
+  position: relative;
+  background: linear-gradient(to right, #4dc9e6, #210CAE);
+  color: white; 
+  -webkit-background-clip: text;
+  background-clip: text;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #4dc9e6, #210CAE);
+  border-image-slice: 1;
+  border-radius: 25px; 
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gradient:hover {
+  color: transparent;
+}
