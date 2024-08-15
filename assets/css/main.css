@@ -12092,6 +12092,12 @@ body {
   text-align: center;
   height: 100vh;
 }
+.skills__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .skills__text {
   display: flex;
   flex-direction: column;
@@ -12244,14 +12250,6 @@ body {
   font-weight: 200;
 }
 
-.navbar {
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 .nav-link {
   color: #FAFAFA;
   font-size: 18px;
@@ -12262,8 +12260,9 @@ body {
 }
 
 .navbar-brand__image {
+  max-width: 80px;
+  min-width: 50px;
   width: 100%;
-  max-width: 90px;
   height: auto;
 }
 
